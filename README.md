@@ -7,7 +7,7 @@ Detecting whether a Qiita article is good or not.
 from predictor import Predictor
 
 pr = Predictor()
-pr.predict(Qiita URL)
+pr.predict(Qiita article URL)
 ```
 
 output is like:
