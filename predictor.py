@@ -21,7 +21,7 @@ class Predictor:
                 data = []
                 with open(path) as f:
                     data.append(f.read())
-                return predict(self.clf, self.vec, data)
+            return predict(self.clf, self.vec, data)
 
 
 if __name__ == "__main__":
