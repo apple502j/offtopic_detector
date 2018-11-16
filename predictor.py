@@ -13,6 +13,16 @@ class Predictor:
             with open(path) as f:
                 return predict(self.clf, self.vec, [f.read()])
 
+    def predict_list(self, path_list, is_url=True):
+        if is_url:
+            return predict(self.clf, self.vec, [get_content(path) for path in path_list])
+        else:
+            for path in path_list:
+                data = []
+                with open(path) as f:
+                    data.append(f.read())
+                return predict(self.clf, self.vec, data)
+
 
 if __name__ == "__main__":
     predictor = Predictor()
