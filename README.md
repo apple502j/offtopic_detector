@@ -1,5 +1,5 @@
 # poem_detector
-Detecting whether a Qiita article is good or not.
+Detecting whether a Scratch forum post is good or not.
 
 ## how to use?
 
